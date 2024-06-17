@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Global css */
+    
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+
+    --vb-yellow: hsl(52, 100%, 62%);
+
+
+    --pl-white: hsl(0, 0%, 100%);
+
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+
+    --dk-text: hsl(198, 20%, 13%);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: white;
+    background: linear-gradient(89deg, rgba(88, 7, 125, 1) 0%, rgba(47, 6, 73, 1) 50%, rgba(24, 6, 43, 1) 100%);
+
+}
+
+.heading{
+    margin-top: 2rem;
+    font-size: xx-large;
+    text-align: center;
+    font-family: "Tiny5";
+}
+.password-show-container{
+    display: flex;
+    margin: auto;
+    background-color: rgb(22 6 40);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    flex-direction: row;
+    border: 1px solid black;
+    
+    justify-content:space-evenly;
+    align-items: center;
+    width: 400px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 6px solid rgb(88 7 125);
+}
+.password-output{
+     all: unset;
+     color: rgb(255 229 61);
+     font-weight: 700;
+     display: flex;
+     background-color: rgb(22 6 40);
+    justify-content: center;
+    font-size: x-large;
+     align-items: center;
+}
+.copi-to-clipboard{
+    opacity: 0;
+
+}
+.copybtn{
+    all: unset;
+    cursor: pointer;
+    
+}
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border:1px solid black;
+    width: 400px;
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+    background-color: rgb(22 6 40);
+    border-bottom: 6px solid rgb(88 7 125);
+}
+.password-length-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    font-weight: bold;
+    font-size: larger;
+    font-family: "Roboto";
+}
+.slider{
+    /* appearance: none; */
+    all: unset;
+    width: 100%;
+    /* appearance: none; */
+    height: 0.75rem;
+
+    
+    background-color: red;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid yellow;
+    background-image: linear-gradient(var(--vb-violet),var(--vb-violet));
+    
+}
+.slider::-webkit-slider-thumb{
+    
+    appearance: none;
+    position: relative;
+    background-color: var(--vb-yellow);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--vb-yellow);
+    /* margin: -3px; */
+    /* z-index: 10; */
+    
+}
+.slider::-webkit-slider-thumb:hover{
+    background-color: red;
+    outline: 2px solid var(--vb-yellow) ;
+}
+.slider:focus{
+    /* outline:2px solid var(--vb-yellow);
+    background-color: var(--dk-violet);
+    z-index: -1; */
+}
+
+.checkbox-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.strength-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.Genrate-button,.range-container{
+    width: 90%;
+     margin: auto;
+}
+.copi-to-clipboard{
+    color: aqua;
+    opacity: 1;
+}
+
+.check{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin: 1rem 0; */
+    gap: 0 1rem;
+    
+
+
+}
+
+.check input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--vb-cyan);
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.35rem;
+    border: 1px solid white;
+}
+
+.check input:checked{
+    background-color: aqua;
+}
+
+.check input:checked::after{
+    content: " ✔ ";
+    opacity: 1;
+    color: black;
+    position: absolute;
+    font-size: 1.05rem;
+    left: 50%;
+    top: -3.5px;
+    transform: translateX(-50%);
+}
+
+.check label{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.75px;
+}
+.genrateBtn{
+    background-color: var(--lt-violet2);
+    cursor: pointer;
+    color: var(--vb-yellow);
+    border-radius: 0.75rem;
+    border-bottom: 0.35rem solid var(--vb-yellow);
+    padding: 1rem 0rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 90%;
+    margin: 0 1rem;
+    /* margin-top: 1rem; */
+}
+
